@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desde 1949, Corralón Florida Norte ofrece materiales de construcción de alta calidad en la Zona Norte. Cotizaciones inmediatas y envíos a obra con flota propia.">
+    <title>Corralón Florida Norte | Materiales de Construcción desde 1949</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png" type="image/png">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5491166712813?text=Hola%20Corralón%20Florida%20Norte,%20quisiera%20hacer%20una%20consulta." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       id="float-whatsapp-btn"
+       aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿En qué podemos ayudarte hoy?</span>
+    </a>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-glass fixed-top" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#hero">
+                <img src="img/logo.png" alt="Logo Corralón Florida Norte" class="d-inline-block align-text-top" id="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cotizador">Cotizador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="https://wa.me/5491166712813?text=Hola,%20quisiera%20solicitar%20presupuesto%20de%20materiales." 
+                           class="btn-premium btn-accent btn-contact" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           id="nav-cta-btn">
+                            <i class="bi bi-whatsapp"></i> Cotizar Ahora
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-wrapper" id="hero">
+        <div class="hero-bg" id="hero-parallax-bg">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="img/hero_video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-start">
+                    <span class="badge bg-orange text-white px-3 py-2 mb-3 fs-6 rounded-pill bg-opacity-75 border border-white border-opacity-25 gsap-reveal" style="background-color: var(--accent-orange);">
+                        <i class="bi bi-hammer me-2"></i>Líderes en Zona Norte desde 1949
+                    </span>
+                    <h1 class="hero-title gsap-reveal">
+                        Construimos Confianza, <br><span>Entregamos Calidad.</span>
+                    </h1>
+                    <p class="hero-subtitle gsap-reveal">
+                        Somos mucho más que un proveedor de materiales: somos aliados estratégicos para construir tus sueños. Experiencia, seriedad y logística a tu medida.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 gsap-reveal">
+                        <a href="#cotizador" class="btn-premium btn-accent" id="hero-primary-cta">
+                            <i class="bi bi-calculator me-1"></i> Cotizar Proyecto
+                        </a>
+                        <a href="#servicios" class="btn-premium btn-outline-white" id="hero-secondary-cta">
+                            Descubrir Servicios <i class="bi bi-arrow-down ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust badges floating in Hero -->
+            <div class="row mt-5 pt-4 gsap-reveal">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="trust-badge-card d-flex align-items-center gap-3">
+                        <div class="fs-2 text-warning"><i class="bi bi-award"></i></div>
+                        <div>
+                            <h4 class="h6 text-white mb-0">Trayectoria Histórica</h4>
+                            <small class="text-white-50">Liderando obras desde 1949</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="trust-badge-card d-flex align-items-center gap-3">
+                        <div class="fs-2 text-warning"><i class="bi bi-truck"></i></div>
+                        <div>
+                            <h4 class="h6 text-white mb-0">Logística Especializada</h4>
+                            <small class="text-white-50">Envíos directos y rápidos a pie de obra</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-3">
+                    <div class="trust-badge-card d-flex align-items-center gap-3">
+                        <div class="fs-2 text-warning"><i class="bi bi-person-check-fill"></i></div>
+                        <div>
+                            <h4 class="h6 text-white mb-0">Atención Profesional</h4>
+                            <small class="text-white-50">Asesoramiento a medida y técnico</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nosotros Section -->
+    <section class="section-padding" id="nosotros">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 gsap-reveal">
+                    <div class="about-img-wrapper">
+                        <img src="img/Tienda.png" alt="Instalaciones de Corralón Florida Norte">
+                        <div class="about-experience-badge">
+                            <span class="about-experience-year">1949</span>
+                            <span class="about-experience-lbl">Fundación</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5 gsap-reveal">
+                    <div class="section-title-wrapper mb-4">
+                        <span class="section-pretitle">Nuestro Legado</span>
+                        <h2 class="section-title">Más de 70 Años Siendo Socios de tus Sueños</h2>
+                    </div>
+                    <p class="lead text-muted mb-4">
+                        Desde nuestra fundación en 1949, nos hemos comprometido a ser mucho más que un proveedor de materiales de construcción: somos aliados estratégicos para construir sueños, transformar espacios y dar vida a proyectos de todos los tamaños.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Nuestro legado está construido sobre valores sólidos, como la excelencia, la responsabilidad y el compromiso inquebrantable con nuestros clientes. En cada entrega llevamos la certeza de que tus proyectos están en manos expertas. Porque construir no es solo erigir estructuras, es crear el futuro, y en ese camino queremos ser tus socios de confianza.
+                    </p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-light p-3 rounded-circle text-orange" style="color: var(--accent-orange); background-color: var(--accent-light) !important;">
+                                    <i class="bi bi-people-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 mb-1 fw-bold">Equipo de Profesionales</h4>
+                                    <small class="text-muted">11-50 Empleados Expertos</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-light p-3 rounded-circle text-orange" style="color: var(--accent-orange); background-color: var(--accent-light) !important;">
+                                    <i class="bi bi-boxes fs-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 mb-1 fw-bold">Sector Mayorista/Minorista</h4>
+                                    <small class="text-muted">Distribución a todo nivel</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios / Beneficios Minimalistas -->
+    <section class="section-padding" id="servicios">
+        <div class="container">
+            <div class="section-title-wrapper text-center mb-5">
+                <h2 class="h5 fw-bold text-uppercase" style="color: var(--primary-navy); letter-spacing: 2px;">SERVICIOS</h2>
+                <div style="height: 1px; width: 100%; max-width: 600px; background: #eaeaea; margin: -5px auto 30px;">
+                    <div style="width: 150px; height: 2px; background: var(--primary-navy); margin: 0 auto;"></div>
+                </div>
+            </div>
+            
+            <div class="row text-center g-5 justify-content-center">
+                <div class="col-6 col-md-4 service-grid-item">
+                    <i class="bi bi-truck text-blue d-block mb-3" style="color: #004ba0; font-size: 3.5rem;"></i>
+                    <p class="small fw-bold text-muted text-uppercase mb-0" style="font-size: 0.85rem; letter-spacing: 1px;">ENTREGAS EN OBRA</p>
+                </div>
+                <div class="col-6 col-md-4 service-grid-item">
+                    <i class="bi bi-cash-coin text-blue d-block mb-3" style="color: #004ba0; font-size: 3.5rem;"></i>
+                    <p class="small fw-bold text-muted text-uppercase mb-0" style="font-size: 0.85rem; letter-spacing: 1px;">FINANCIACIÓN</p>
+                </div>
+                <div class="col-6 col-md-4 service-grid-item">
+                    <i class="bi bi-boxes text-blue d-block mb-3" style="color: #004ba0; font-size: 3.5rem;"></i>
+                    <p class="small fw-bold text-muted text-uppercase mb-0" style="font-size: 0.85rem; letter-spacing: 1px;">AMPLIO STOCK</p>
+                </div>
+                <div class="col-6 col-md-4 service-grid-item">
+                    <i class="bi bi-headset text-blue d-block mb-3" style="color: #004ba0; font-size: 3.5rem;"></i>
+                    <p class="small fw-bold text-muted text-uppercase mb-0" style="font-size: 0.85rem; letter-spacing: 1px;">ATENCIÓN PERSONALIZADA</p>
+                </div>
+                <div class="col-6 col-md-4 service-grid-item">
+                    <i class="bi bi-person-workspace text-blue d-block mb-3" style="color: #004ba0; font-size: 3.5rem;"></i>
+                    <p class="small fw-bold text-muted text-uppercase mb-0" style="font-size: 0.85rem; letter-spacing: 1px;">ASESORAMIENTO TÉCNICO</p>
+                </div>
+                <div class="col-6 col-md-4 service-grid-item">
+                    <i class="bi bi-box-seam text-blue d-block mb-3" style="color: #004ba0; font-size: 3.5rem;"></i>
+                    <p class="small fw-bold text-muted text-uppercase mb-0" style="font-size: 0.85rem; letter-spacing: 1px;">ACOPIO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Asesoramiento Section (Olive Background) -->
+    <section class="section-padding text-white" id="asesoramiento" style="background-color: #5c6253;">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h2 class="fw-bold h3 mb-4 text-white">BRINDAMOS ASESORAMIENTO TÉCNICO<br>PERSONALIZADO PARA OBRAS DE GRAN ESCALA</h2>
+                    <div class="d-flex gap-3 toggle-group-olive">
+                        <button class="btn btn-olive active" id="btn-minorista">MINORISTA</button>
+                        <button class="btn btn-olive" id="btn-mayorista">MAYORISTA</button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <p class="mb-0 text-white-50" style="font-size: 0.95rem;">
+                        Nuestro enfoque se basa en ofrecer stock real disponible, entregas eficientes y precios competitivos.<br>
+                        Acompañamos a empresas y profesionales en cada etapa del proyecto, asegurando calidad, rapidez y respaldo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div id="asesoramientoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner pb-4">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card bg-transparent border-0 d-flex flex-row gap-3 align-items-start">
+                                    <img src="img/images.jpeg" class="rounded-3 object-fit-cover shadow-sm" style="width: 140px; height: 100px; flex-shrink: 0;" alt="...">
+                                    <div class="text-white">
+                                        <h5 class="fw-bold fs-6 text-white mb-2">Presencia y cobertura</h5>
+                                        <p class="small text-white-50 mb-0" style="font-size: 0.8rem; line-height: 1.4;">Estamos ubicados estratégicamente en Florida, Vicente López. Garantizamos cobertura operativa y entregas eficientes en Zona Norte y alrededores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-transparent border-0 d-flex flex-row gap-3 align-items-start">
+                                    <img src="img/camion.jpeg" class="rounded-3 object-fit-cover shadow-sm" style="width: 140px; height: 100px; flex-shrink: 0;" alt="...">
+                                    <div class="text-white">
+                                        <h5 class="fw-bold fs-6 text-white mb-2">Qué ofrecemos</h5>
+                                        <p class="small text-white-50 mb-0" style="font-size: 0.8rem; line-height: 1.4;">Abastecemos materiales de construcción a constructoras, arquitectos y obras civiles. Combinamos productos de calidad con atención profesional pensada para obras de escala.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-md-6">
+                                <div class="card bg-transparent border-0 d-flex flex-row gap-3 align-items-start">
+                                    <img src="img/Tienda.png" class="rounded-3 object-fit-cover shadow-sm" style="width: 140px; height: 100px; flex-shrink: 0;" alt="...">
+                                    <div class="text-white">
+                                        <h5 class="fw-bold fs-6 text-white mb-2">Cómo trabajamos</h5>
+                                        <p class="small text-white-50 mb-0" style="font-size: 0.8rem; line-height: 1.4;">Nuestra estructura está diseñada para responder con agilidad a las demandas de cada proyecto. Ofrecemos stock disponible en tiempo real y asesoramiento especializado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-transparent border-0 d-flex flex-row gap-3 align-items-start">
+                                    <img src="img/Materiales.jpeg" class="rounded-3 object-fit-cover shadow-sm" style="width: 140px; height: 100px; flex-shrink: 0;" alt="...">
+                                    <div class="text-white">
+                                        <h5 class="fw-bold fs-6 text-white mb-2">Proveedores y confianza</h5>
+                                        <p class="small text-white-50 mb-0" style="font-size: 0.8rem; line-height: 1.4;">Trabajamos con los principales proveedores del país, ofreciendo marcas líderes. El cumplimiento constante nos permite generar lazos a largo plazo con cada cliente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controls and Indicators -->
+                <div class="d-flex justify-content-between align-items-center mt-4 px-4">
+                    <button class="btn btn-link text-white text-decoration-none p-0 d-flex align-items-center gap-2" type="button" data-bs-target="#asesoramientoCarousel" data-bs-slide="prev" style="opacity: 0.7;">
+                        <i class="bi bi-chevron-left border border-white rounded-circle p-1"></i>
+                    </button>
+                    <div class="carousel-indicators position-relative m-0">
+                        <button type="button" data-bs-target="#asesoramientoCarousel" data-bs-slide-to="0" class="active rounded-circle bg-white" style="width:8px; height:8px;" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#asesoramientoCarousel" data-bs-slide-to="1" class="rounded-circle bg-white" style="width:8px; height:8px; opacity:0.5;" aria-label="Slide 2"></button>
+                    </div>
+                    <button class="btn btn-link text-white text-decoration-none p-0 d-flex align-items-center gap-2" type="button" data-bs-target="#asesoramientoCarousel" data-bs-slide="next" style="opacity: 0.7;">
+                        <i class="bi bi-chevron-right border border-white rounded-circle p-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotizador Section (Interactive Sales Funnel Action) -->
+    <section class="section-padding" id="cotizador">
+        <div class="container">
+            <div class="section-title-wrapper text-center">
+                <span class="section-pretitle">Calcula y Solicita</span>
+                <h2 class="section-title">Cotizador Express de Materiales</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    Selecciona los materiales que necesitas para tu proyecto y nuestro equipo te enviará una cotización formal directamente a tu WhatsApp en minutos.
+                </p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-12">
+                    <div class="cotizador-container">
+                        <form id="express-quote-form">
+                            <!-- Step 1: Material Selection -->
+                            <div class="mb-5">
+                                <h3 class="cotizador-step-title">
+                                    <span>1</span> Busca y Arma tu Lista
+                                </h3>
+                                
+                                <!-- Search Bar -->
+                                <div class="position-relative mb-4" style="z-index: 10;">
+                                    <div class="input-group input-group-lg shadow-sm" style="border-radius: 12px; overflow: hidden;">
+                                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                                        <input type="text" class="form-control border-start-0 ps-0 form-control-premium" id="material-search" placeholder="Buscar material (ej. Cemento Loma Negra, Hierro 8mm)..." autocomplete="off">
+                                    </div>
+                                    <!-- Dropdown for results -->
+                                    <div class="dropdown-menu w-100 shadow-lg border-0 mt-2 rounded-3" id="search-results" style="max-height: 250px; overflow-y: auto; display: none;">
+                                    </div>
+                                </div>
+
+                                <!-- Cart List -->
+                                <div class="card border-0 shadow-sm mb-4 rounded-4 overflow-hidden">
+                                    <div class="card-header bg-light border-bottom-0 py-3">
+                                        <h5 class="h6 fw-bold mb-0 text-muted"><i class="bi bi-cart3 me-2"></i>Mi Lista de Materiales</h5>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="list-group list-group-flush" id="cart-list">
+                                            <!-- Empty state -->
+                                            <li class="list-group-item text-center text-muted py-5 border-0" id="cart-empty-state">
+                                                <i class="bi bi-box-seam fs-1 d-block mb-3 opacity-25"></i>
+                                                Aún no has agregado materiales.<br><small>Busca arriba o selecciona una categoría rápida.</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Quick Add Categories -->
+                                <h5 class="h6 fw-bold mb-3 text-muted small text-uppercase" style="letter-spacing: 1px;">Categorías Rápidas</h5>
+                                <div class="row g-3" id="materials-container">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="material-quick-card p-3 border rounded-3 bg-white shadow-sm cursor-pointer" data-category="cementos">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <span class="fw-bold text-dark" style="font-size: 0.9rem;">Cementos y Cales</span>
+                                                <i class="bi bi-plus-circle-fill text-accent fs-5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="material-quick-card p-3 border rounded-3 bg-white shadow-sm cursor-pointer" data-category="hierros">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <span class="fw-bold text-dark" style="font-size: 0.9rem;">Hierro y Mallas</span>
+                                                <i class="bi bi-plus-circle-fill text-accent fs-5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="material-quick-card p-3 border rounded-3 bg-white shadow-sm cursor-pointer" data-category="ladrillos">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <span class="fw-bold text-dark" style="font-size: 0.9rem;">Ladrillos y Bloques</span>
+                                                <i class="bi bi-plus-circle-fill text-accent fs-5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="material-quick-card p-3 border rounded-3 bg-white shadow-sm cursor-pointer" data-category="aridos">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <span class="fw-bold text-dark" style="font-size: 0.9rem;">Áridos y Piedras</span>
+                                                <i class="bi bi-plus-circle-fill text-accent fs-5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="material-quick-card p-3 border rounded-3 bg-white shadow-sm cursor-pointer" data-category="techos">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <span class="fw-bold text-dark" style="font-size: 0.9rem;">Techos y Aislaciones</span>
+                                                <i class="bi bi-plus-circle-fill text-accent fs-5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="material-quick-card p-3 border rounded-3 bg-white shadow-sm cursor-pointer" data-category="herramientas">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <span class="fw-bold text-dark" style="font-size: 0.9rem;">Otros y Herramientas</span>
+                                                <i class="bi bi-plus-circle-fill text-accent fs-5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 2: Contact Info -->
+                            <div class="row g-4 mb-5">
+                                <div class="col-md-6">
+                                    <h3 class="cotizador-step-title">
+                                        <span>2</span> Tus Datos de Contacto
+                                    </h3>
+                                    <div class="d-flex flex-column gap-3">
+                                        <div>
+                                            <label for="quote-name" class="form-label small fw-bold">Nombre Completo *</label>
+                                            <input type="text" class="form-control form-control-premium" id="quote-name" placeholder="Ej: Juan Pérez" required>
+                                        </div>
+                                        <div>
+                                            <label for="quote-location" class="form-label small fw-bold">Zona de Obra / Dirección *</label>
+                                            <input type="text" class="form-control form-control-premium" id="quote-location" placeholder="Ej: Florida, Vicente López" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="cotizador-step-title">
+                                        <span>3</span> Detalles Adicionales (Opcional)
+                                    </h3>
+                                    <div>
+                                        <label for="quote-message" class="form-label small fw-bold">Especifica cantidades o detalles</label>
+                                        <textarea class="form-control form-control-premium" id="quote-message" rows="4" placeholder="Ej: Necesito 20 bolsas de cemento, 3 metros de arena y 15 barras de hierro del 8."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Submit Button and Dynamic Pricing -->
+                            <div class="pricing-summary-box text-center bg-white rounded-4 p-4 shadow-sm border mb-4">
+                                <h4 class="text-muted mb-2">Total Estimado</h4>
+                                <h2 class="display-5 fw-bold mb-0 text-accent" id="dynamic-total" style="color: var(--accent-orange);">$0</h2>
+                                <small class="text-muted">* Precios de referencia. El presupuesto final se ajustará por WhatsApp.</small>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn-premium btn-whatsapp btn-lg px-5 py-3" id="submit-quote-btn">
+                                    <i class="bi bi-whatsapp fs-5"></i> Enviar Cotización a WhatsApp
+                                </button>
+                                <p class="small text-muted mt-3 mb-0">
+                                    <i class="bi bi-lock-fill me-1"></i> No almacenamos tus datos. El formulario abrirá un enlace seguro a WhatsApp.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer class="footer-dark" id="contacto">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/logo.png" alt="Logo Corralón Florida Norte en Footer" class="mb-4" style="height: 60px; filter: brightness(0) invert(1);">
+                    <p class="small mb-4">
+                        Desde 1949, tu socio comercial de confianza. Ofreciendo los mejores materiales y asesoramiento profesional para que tu obra sea un éxito.
+                    </p>
+                    <div class="d-flex">
+                        <a href="https://wa.me/5491166712813" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#hero" class="footer-link">Inicio</a></li>
+                        <li><a href="#nosotros" class="footer-link">Nosotros</a></li>
+                        <li><a href="#servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="#cotizador" class="footer-link">Cotizador Express</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-5 col-md-12">
+                    <h5>Información de Contacto</h5>
+                    <div class="footer-info-item">
+                        <i class="bi bi-geo-alt-fill footer-info-icon"></i>
+                        <div>
+                            <strong>Ubicación del Corralón:</strong><br>
+                            Florida, Vicente López, Zona Norte, Buenos Aires, Argentina.
+                        </div>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="bi bi-telephone-fill footer-info-icon"></i>
+                        <div>
+                            <strong>Teléfono Comercial:</strong><br>
+                            <a href="tel:1166712813" class="text-white text-decoration-none">11 6671-2813</a>
+                        </div>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="bi bi-clock-fill footer-info-icon"></i>
+                        <div>
+                            <strong>Horarios de Atención:</strong><br>
+                            Lunes a Viernes: 8:00 a 17:00 hs.<br>
+                            Sábados: 8:00 a 13:00 hs.
+                        </div>
+                    </div>
+                    <div class="footer-info-item">
+                        <i class="bi bi-building-fill footer-info-icon"></i>
+                        <div>
+                            <strong>Comercio al por mayor de materiales de construcción</strong><br>
+                            Empresa familiar con 11-50 colaboradores expertos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row footer-bottom text-center">
+                <div class="col-md-6 text-md-start mb-3 mb-md-0">
+                    &copy; 2026 Corralón Florida Norte. Todos los derechos reservados.
+                </div>
+                <div class="col-md-6 text-md-end">
+                    Diseñado con compromiso y confianza.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Core & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom App Script -->
+    <script src="app.js"></script>
+</body>
+</html>
